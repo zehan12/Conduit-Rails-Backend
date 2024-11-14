@@ -44,3 +44,6 @@ end
 gem 'devise'
 gem 'devise-jwt'
 gem 'jsonapi-serializer'
+
+# Add dotenv gem
+gem 'dotenv-rails', groups: [:development, :test]
