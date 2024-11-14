@@ -40,4 +40,7 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 end
 
-
+# devise, devise-JWT and jsonapi-serializer for jwt auth
+gem 'devise'
+gem 'devise-jwt'
+gem 'jsonapi-serializer'
