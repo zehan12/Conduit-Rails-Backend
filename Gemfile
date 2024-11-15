@@ -41,9 +41,9 @@ group :development, :test do
 end
 
 # devise, devise-JWT and jsonapi-serializer for jwt auth
-gem 'devise'
-gem 'devise-jwt'
-gem 'jsonapi-serializer'
+gem "devise"
+gem "devise-jwt"
+gem "jsonapi-serializer"
 
 # Add dotenv gem
-gem 'dotenv-rails', groups: [:development, :test]
+gem "dotenv-rails", groups: [ :development, :test ]
