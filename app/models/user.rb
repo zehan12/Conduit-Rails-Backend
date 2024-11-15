@@ -8,4 +8,5 @@ class User < ApplicationRecord
          :jwt_authenticatable, jwt_revocation_strategy: self
 
   has_many :posts, foreign_key: "author_id"
+  has_many :comments, foreign_key: :author_id, dependent: :destroy
 end
