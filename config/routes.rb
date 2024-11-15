@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   get "private/test"
   devise_for :users, path: "", path_names: {
-    sign_in: "login",
-    sign_out: "logout",
-    registration: "signup"
+    sign_in: "/api/users/login",
+    sign_out: "/api/users/logout",
+    registration: "/api/users/signup"
   },
   controllers: {
     sessions: "users/sessions",
