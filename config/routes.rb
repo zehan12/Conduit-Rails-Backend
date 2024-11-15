@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+  namespace :api do
+    resources :user, only: [ :index ]
+  end
+
   get "private/test"
+
   devise_for :users, path: "", path_names: {
     sign_in: "/api/users/login",
     sign_out: "/api/users/logout",
